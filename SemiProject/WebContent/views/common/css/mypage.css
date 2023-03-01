@@ -1,0 +1,344 @@
+
+
+div{
+    box-sizing : border-box;
+    /*border : 1px solid lightgray;*/
+    /*border :1px solid #59d6f8*/
+    /*background:#f8f5f5;*/
+    /*background: #F7F7F7*/
+}
+
+
+/* 전체를 감싸는 div */
+.wrap{
+   
+    width : 1000px;
+    margin : auto;
+}
+
+.wrap>div{
+    width : 100%;          
+}
+/* 크게 세가지 영역 */
+/* #header, #content, #footer */
+/* 부모 기준으로 100% 채우겠다 /width 100% 쓴 이유 / 이게 자손이다.-> #header, #content, #footer */
+
+
+/* header 영역 */
+#header {
+    height: 80px;
+    background: white;
+    border : 1px solid lightgray;
+    position:relative;
+}
+
+#header_area{width:100%;}
+
+
+
+
+
+/* header 로그인 영역 관련 */
+
+.logo_area, .login_area{display:inline-block;}
+
+.logo_area{width:70%; height:80px;
+           position:relative; 
+    }
+
+#logo_picture{position:absolute;
+              left:495px; 
+}
+
+.login_area{width:30%; 
+           float:right;}
+
+
+
+
+#login-before, #login-after{padding-left:150px;}
+
+#login-before{margin-top:30px;
+              padding-left:220px;  
+              height:40px;  
+}
+
+#login-after{margin-top:20px;}
+
+/* content 영역 나누기 전체 관련 */
+#content{
+    height : 560px;
+    background : #F7F7F7;
+    border : 1px solid lightgray;
+}
+
+#content>div{
+    height : 100%;
+    float : left;
+}
+
+#content_1{
+    width : 20%;
+    background:white;
+    border:10px solid #F7F7F7;
+   
+}
+
+#content_2{
+    width : 80%;
+    padding:10px 20px;
+}
+
+/* content 내부의 세분화된 영역들 */
+/* content_1 내부 */
+
+#userclass{
+    height:10%;
+    padding-top:3%;
+}
+
+#userclass>img,span{padding-left:10px;}
+
+#hotel_name{color:black;
+            font-size:11px;
+            line-height:35px;
+            padding-left:1px;              
+}
+
+/* content_1 사이드메뉴 관련 스타일(1) */
+
+#mylist{
+    height:90%;
+}
+
+#mylist>p{text-align: center;
+          height:10%;
+          padding-top:20px;
+          padding-right:10px;
+          /*font-family: 'Dancing Script', cursive;*/
+          font-family:굴림;
+          font-size: 20px;
+}
+
+#mylist>div{height:88%;
+            padding-top:30px;    
+}
+
+#mylist_2{padding-right:30px;} 
+
+/*  content_1 사이드메뉴 관련 스타일(2) */
+#menu{
+    list-style-type:none;
+    cursor:pointer;
+}
+
+#menu>li:first-child{font-size:20px; font-weight:bold; font-family:굴림;}
+#menu>li:nth-child(2){font-size:20px; font-weight:bold; margin-top:20px; font-family:굴림;}
+
+
+#menu>li{text-align:left;}
+
+#menu>.submenu1{
+    margin-top:10px;
+}
+
+.submenu2{
+    list-style-type: none;
+    position: right;
+    display: none;
+    margin-top:10px;
+    padding-left:10px;
+}
+
+.submenu2>li{
+    margin: 5px 0;
+} 
+
+a:link { color:black; text-decoration: none;}
+a:visited { color:black; text-decoration: none;}
+a:hover { color: #59d6f8; text-decoration: none;}
+
+
+/* content_2 관련 스타일 */
+
+/* 공통 스타일 */
+label {
+    color:gray;
+    font-size: 13px;
+}
+
+
+/* 예약 조회 page */
+#search_table { border-collapse: separate;
+                border-spacing: 0 10px;}
+
+#border_line{border-top: 5px solid lightgray; width:100%;} 
+ 
+
+/* 내 정보 page */
+#myinfo_1, #myinfo_2{padding:10px;}
+
+.fix{margin-left:120px; width:50px;}
+
+#fullname, #birthDate{margin-top:5px;}
+
+#newPhone{margin-top:5px;}
+
+#sex {margin-top:5px;}
+
+
+/* 계정 및 비밀번호 page & 비밀번호 팝업 창 */
+
+#password_chage{padding:30px;
+                background: white;
+} 
+
+#password_pop{border:5px solid lightgray;
+              margin-top:20px;
+              margin-left:50px;
+              width:400px;
+              height: 270px;
+}
+
+#password_pop>span{padding-left:0px;;}
+
+#password_space{border-collapse: separate;
+                border-spacing: 0 10px;
+                padding-left: 30px;
+}
+
+#value1{display:block; margin:auto;}
+
+
+/* 예약 취소 page */
+
+#cancel_box{margin-top:60px;}
+
+.btn-primary{margin-left:120px;}
+
+#btn_1{margin-left:5px;}
+
+#cancel_1{padding-left:270px;}
+
+#cancel_table{border-collapse: separate;
+              border-spacing: 0 5px;
+              padding-right: 50px;  
+              margin-bottom:10px
+}
+
+/* footer 관련 */
+
+#footer{
+    height : 400px;
+    background: #212832;
+    
+}
+
+/* 글자 폰트 관련 */
+
+#MyPage{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left:24px;
+    padding-top:30px;
+}
+
+#login_font{font-family:굴림;
+            font-weight:bold;
+            text-decoration-line:none;
+}
+
+#logout_font{text-decoration-line:none;}
+#font10{font-weight: bold;}
+
+
+
+/* 이미지 관련 */
+
+#header{background-image:url("resources/image/로고22.png");
+        background-position: center;
+        background-repeat: no-repeat;
+}
+ 
+#cancel_box{background:white;
+            margin-right:5px;
+}
+
+#cancel_box>p{padding-left:10px;
+              padding-top :10px;  
+}
+
+.btn{padding-top:4px;}
+
+/* footer 관련*/
+
+.footer_div{float:left; margin-right:70px;
+ margin-top: 50px; text-align:left;
+ color:#A6AAB3;
+}
+.footer_div>p:first-child{color:white;
+                          font-size:14px;
+}
+
+
+#footer_center{display:inline-block;
+              
+}
+
+#copyright{margin-right:50px;
+           color:#A6AAB3; 
+           font-size:10px;
+           padding-left:50px;
+}
+
+#footer_1{text-align:left;
+          padding-left:50px;
+}
+
+#check-btn1 { display: none;}
+#check-btn1:checked ~ .menubars1 { display: block;} 
+.menubars1 { display: none; padding-left:25px; }
+.menubars1>li{list-style-type:none;
+             cursor:pointer;
+             margin: 5px 0;
+             padding-right:20px;
+             font-size:13px;
+             font-weight:bold;  
+}
+.menubars1>li>a{text-decoration-line:none;
+                
+}
+
+.menubars1>li>a:hover{color:#59d6f8;}
+
+#check-btn2 { display: none; }
+#check-btn2:checked ~ .menubars2 { display: block;  padding-left:25px; } 
+.menubars2 { display: none; }
+.menubars2>li{list-style-type:none;
+             cursor:pointer;
+             margin: 5px 0;
+             padding-right:20px;
+             font-size:13px;
+             font-weight:bold;
+             
+}
+.menubars2>li>a{text-decoration-line:none;}
+
+.menubars2>li>a:hover{color:#59d6f8;}
+
+#list{margin-top:20px;
+      margin-right:20px;
+      
+}
+
+.font_1{font-size:20px;
+        color:black;
+        cursor:pointer;
+        font-family:굴림;
+}
+
+#search_click{width:40px;}
+
+#button_move{margin-left:5px;}
+
+#close_button{border:0;}

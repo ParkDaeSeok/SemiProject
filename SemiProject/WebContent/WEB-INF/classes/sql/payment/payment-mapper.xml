@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+<comment>결제관련 쿼라</comment>
+
+
+		
+	<entry key="UpdateBook">
+	
+		UPDATE BOOK SET PAY_STATUS = 'Y'
+		WHERE PAYMENT NOT NULL;
+		
+	
+	</entry>
+	
+	
+	<entry key="cardNocheck">
+		SELECT COUNT(*)
+		  FROM CARD
+		 WHERE CARD_NO = ?
+	</entry>
+	
+	<entry key="cardValiDate Check">
+		SELECT COUNT(*)
+		  FROM CARD
+		 WHERE CARD_VALIDATE = ?
+	</entry>
+	
+	<entry key="cardPasswordCheck">
+		SELECT COUNT(*)
+		  FROM CARD
+		 WHERE CARD_PASSWORD = ?
+	</entry>
+	
+	<entry key="cvcCheck">
+		SELECT COUNT(*)
+		  FROM CARD
+		 WHERE CVC = ?
+	</entry>
+	
+	
+	<entry key= "insertPayment">
+		INSERT INTO PAYMENT (MEMBER_NO, PAY_TYPE, PAY_DATE, BOOK_NO)	
+		 VALUES (MEMBER_NO, ?, SYSDATE, ?)
+			
+	</entry>
+	
+		
+		
+	<entry key="checkMember">
+		SELECT MEMBER_NO 
+  		  FROM MEMBER 
+ 		 WHERE EMAIL = ? 
+   		   AND PHONE = ? 
+	</entry>
+	
+	<entry key="selectCard">
+		SELECT CARD_NO, CARD_VALIDATE, CARD_PASSWORD, CVC, MEMBER_NO 
+		  FROM CARD 
+		 WHERE CARD_NO = ? 
+		   AND CARD_VALIDATE = ?  
+		   AND CARD_PASSWORD = ? 
+		   AND CVC = ? 
+		   AND MEMBER_NO = ? 
+	</entry>
+	
+	<entry key="insertBook">
+		INSERT INTO BOOKING (BOOK_NO, BOOK_DATE, STATUS, PAY_STATUS, MEM_NO, ROOM_NO) 
+		VALUES(SEQ_BNO.NEXTVAL, SYSDATE, 'N', 'N', ?, ?)
+	</entry>
+	
+	<entry key="selectBook">
+		SELECT BOOK_NO 
+		  FROM BOOKING 
+		 WHERE BOOK_DATE = SYSDATE 
+		   AND PAY_STATUS = 'N' 
+		   AND MEM_NO = ? 
+		   AND ROOM_NO = ? 
+	</entry>
+	
+	<entry key="updateBook">
+		UPDATE BOOKING 
+		   SET PAY_STATUS = 'Y' 
+		 WHERE STATUS= 'N' 
+		   AND BOOK_NO = ?
+	</entry>
+	
+	<entry key="insertPayment">
+		INSERT INTO PAYMENT(PAY_ID, PAY_TYPE, PAY_DATE, BOOK_NO) 
+		VALUES(SEQ_YNO.NEXTVAL, 'CARD', SYSDATE, ?)
+	</entry>
+	
+	
+	</properties>

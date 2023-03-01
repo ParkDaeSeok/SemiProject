@@ -1,0 +1,190 @@
+#searchBar>div {
+    display: inline-block;
+    
+}
+#searchBar {
+    margin-left : 10%;
+}
+#hotel-text {
+    margin-left : 10%;
+}
+#container {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 0px 35px 50px 0px;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(248, 250, 255);
+}
+
+#overlay {
+    position : relative;
+    border-bottom: 1px solid lightgray;
+    
+}
+#menuBar {
+    height : 50%;
+    position : absolute;
+    top : 25px;
+    left : 15px;
+}
+#logo {
+    height : 50%;
+    position: absolute;
+    top: 22px;
+    left : 47%;
+    font-size: 45px;
+}
+
+#quickMenu {
+    list-style-type: none;
+    position: absolute;
+    top : 35px;
+    left : 85%;
+    font-size: 20px;
+    font-weight: 300;
+}
+#quickMenu>li {
+    padding: 8px;
+    margin-left: 10px;
+    float : left;
+}
+
+#login, #signUp {
+    
+    border-radius: 15px;
+    color : white;
+}
+#container1>div {
+    display: inline-block;
+}
+#filter {
+    width : 20%;
+    height : 100%;
+    vertical-align: top;
+}
+#hotel-list {
+    width : 80%;
+    height : 100%;
+}
+
+
+#footer1 {
+    padding-top : 50px;
+    padding-bottom: 0px;
+}
+
+#range {
+    margin : 0px;
+    height : 230px;
+}
+.pay-range {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#hotel-search {
+    background-color: rgb(248, 250, 255);
+    text-align: center;
+    height : 85px;
+    border : 1px solid lightgray;
+    margin-bottom: 15px;
+    position : relative;
+}
+#hotel-search>div {
+    position : absolute;
+    top : 10%;
+    left : 10%;
+}
+#hotel-search * {
+    background-color: white;
+    border :1px solid rgb(248, 250, 255);
+}
+#into-map {
+    position: relative;
+    width : 100%;
+    height : 50%;
+}
+#into-map img {
+    max-width: 100%;
+    max-height: 100%;
+    width : 100%;
+    height: 210px;
+    z-index: 2;
+}
+#into-map div {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #044557;
+    color : white;
+    padding : 8px;
+    width : 40%;
+    height : 18%;
+    border-radius: 15px;
+    z-index: 5;
+    position : absolute;
+    top : 45%;
+    left : 32%;
+    
+}
+
+.rate>span>i {
+    color : #59D6F8;
+}
+
+#hotels {
+    padding-left : 12%;
+    flex-direction: column;
+}
+.destination {
+    width : 280%;
+}
+
+.payment {
+    margin-right: 10%;
+    margin-left : 10%;
+    width : 25%;
+    background-color: rgb(248, 250, 255);
+    border : none;
+}
+.ml-auto {
+    border-radius: 5px;
+}
+/*
+#log>a:hover {
+    background-color: #59D6F8;
+    border : 1px solid #59D6F8;
+}
+#sign>a:hover {
+    background-color: #59D6F8;
+    border : 1px solid #59D6F8;
+}
+*/
+.nav-link {
+    color : black;
+    
+}
+
+#navbar-logo {
+    margin-left: 41.5%;
+    
+  }
+  #navbar-logo:hover {
+    cursor: pointer;
+  }
+  #navbar-logo>img {
+    padding-top: 0px;
+    padding-bottom: 18px;
+    width: 110px;
+    height: 110px;
+  }
+  #navbar-logo>h1 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    color: #59D6F8;
+    display: inline-block;
+  }
+/*
+  #navbar-logo 부터 여기까지 상단바 include하면 삭제
+*/
