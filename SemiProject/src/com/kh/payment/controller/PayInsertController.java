@@ -83,32 +83,7 @@ public class PayInsertController extends HttpServlet {
 			request.getSession().setAttribute("alertMsg", "본인 확인에 실패했습니다");
 			response.sendRedirect(request.getContextPath());
 		}
-		
-//		String memberId = request.getParameter("memberId");
-//	
-//		String payType = request.getParameter("credit");
-//		int  bookNo =  Integer.parseInt(request.getParameter("bookNo"));
-//		
-//		Payment p = new Payment(memberId, payType, bookNo);
-//		
-//		int result = new PaymentService().insertPayment(p);
-//		
-//		
-//		
-//		if(result > 0) { // 성공 => 
-//			
-//			request.getSession().setAttribute("alertMsg", "결제에 성공했습니다.");
-//			
-//			response.sendRedirect(request.getContextPath()+"/booking.jsp");
-//		}
-//		
-//		else { // 실패 
-//			
-//			request.getSession().setAttribute("errorMsg", "결제에 실패했습니다.");
-//			
-//			response.sendRedirect(request.getContextPath() + "/payment.jsp");
-//		}
-		
+
 		
 	}
 	

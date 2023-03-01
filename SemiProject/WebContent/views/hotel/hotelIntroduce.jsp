@@ -6,7 +6,8 @@
 			   , java.util.Map.Entry
 			   , com.kh.hotel.model.vo.*
 			   , com.kh.common.model.vo.PageInfo" 
-%>    
+%>
+<%-- 박대석 --%>    
 <%
 
 	String checkIn = (String)request.getAttribute("checkIn");

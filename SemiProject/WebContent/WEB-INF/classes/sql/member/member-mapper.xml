@@ -46,7 +46,7 @@
 	</entry>
 	
 	
-	<!--  마이페이지  -->
+	<!--  박대석  -->
 	<entry key="selectListBooking">				
 		SELECT BOOK_NO, MEMBER_NAME, BOOK_DATE, HOTEL_NAME, ROOM_PRICE, PAY_STATUS
 		  FROM BOOKING B
@@ -82,7 +82,6 @@
 	</entry>
 	
 	
-	<!--  영훈님꺼 -->
 	<entry key="updatePwdMember">
 		UPDATE MEMBER
 		   SET MEMBER_PWD = ?
@@ -116,7 +115,5 @@
 		WHERE MEMBER_NAME = ?
 		  AND STATUS = 'N'
 	</entry>
-	<!--  영훈님꺼 -->
-	
-	<!--  마이페이지 -->
+	<!--  박대석 -->
 </properties>

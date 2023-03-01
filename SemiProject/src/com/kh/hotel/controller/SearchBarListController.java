@@ -15,6 +15,12 @@ import com.kh.hotel.model.service.HotelService;
 import com.kh.hotel.model.vo.Hotel;
 import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
+/* 
+ * 박대석 
+ * 
+ *  */
+
+
 /**
  * Servlet implementation class SearchBarListController
  */

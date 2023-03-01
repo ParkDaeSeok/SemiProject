@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList, com.kh.hotel.model.vo.Hotel, com.kh.common.model.vo.PageInfo" %>
-
+<%-- 박대석 --%>
 <% 
      ArrayList<Hotel> list = (ArrayList<Hotel>)request.getAttribute("list");
      PageInfo pi = (PageInfo)request.getAttribute("pi");

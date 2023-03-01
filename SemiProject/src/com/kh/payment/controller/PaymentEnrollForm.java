@@ -41,21 +41,10 @@ public class PaymentEnrollForm extends HttpServlet {
         int roomNo = Integer.parseInt(request.getParameter("roomNo"));
         int memberNo = Integer.parseInt(request.getParameter("memberNo"));
         
-        System.out.println("hotelName : "+hotelName);
-        System.out.println("roomName : "+roomName);
-        System.out.println("roomPrice : "+roomPrice);
-        System.out.println("checkIn : "+checkIn);
-        System.out.println("checkOut : "+checkOut);
-        System.out.println("adult : "+adult);
-        System.out.println("roomNo : "+roomNo);
-        
         String[] temp = roomPrice.split(",");
-        System.out.println("temp[0] : "+temp[0]);
-        System.out.println("temp[1] : "+temp[1]);
         
         int roomPay = Integer.parseInt(temp[0] + temp[1]);
         
-        System.out.println("roomPay : "+roomPay);
         
         int dayIn = Integer.parseInt(checkIn.substring(8,10));
         int dayOut = Integer.parseInt(checkOut.substring(8,10));

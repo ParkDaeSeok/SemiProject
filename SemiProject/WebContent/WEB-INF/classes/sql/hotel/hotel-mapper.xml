@@ -5,6 +5,7 @@
 	<comment>호텔 관련 쿼리문들</comment>
 	
 	<!-- 박대석 -->
+	
 	<entry key="selectListCount">
 	     SELECT COUNT(*) COUNT 
 	       FROM HOTEL
@@ -31,32 +32,6 @@
               WHERE RNUM BETWEEN ? AND ? 
 	</entry>
 	
-	<!-- 
-	<entry key="listCountFilter">		
-		SELECT COUNT(*) COUNT
-		  FROM ROOM
-		  JOIN HOTEL ON (HOTEL_NO = HOT_NO)
-		  JOIN LOCAL ON (LOCAL_NO = LOC_NO)
-		 WHERE HOTEL_STATUS = 'N'
-		   AND ROOM_NAME = '스탠다드룸'
-		   AND LOCAL_NAME LIKE ?
-		   AND LOCAL_NAME LIKE ?
-		   AND ROOM_PRICE BETWEEN ? AND ?
-	</entry>
-	
-	<entry key="listCountFilterStar">
-		SELECT COUNT(*) COUNT
-		  FROM ROOM
-		  JOIN HOTEL ON (HOTEL_NO = HOT_NO)
-		  JOIN LOCAL ON (LOCAL_NO = LOC_NO)
-		 WHERE HOTEL_STATUS = 'N'
-		   AND ROOM_NAME = '스탠다드룸'
-		   AND LOCAL_NAME LIKE ?
-		   AND LOCAL_NAME LIKE ?
-		   AND ROOM_PRICE BETWEEN ? AND ?
-           AND HOTEL_STAR = ?
-	</entry>
-	 -->
 	
 	<entry key="listCountFilterName">
 		 SELECT COUNT(*) COUNT
@@ -85,42 +60,6 @@
            AND HOTEL_STAR = ?
 	</entry>
 	
-	<!-- 
-	<entry key="selectList">
-		SELECT * 
-		FROM (
-               SELECT ROWNUM RNUM, A.* 
-		        FROM  (
-		            SELECT HOTEL_NAME, HOTEL_STAR, HOTEL_DESCRIPTION, LOCAL_NAME, ROOM_PRICE  
-		              FROM ROOM 
-		              JOIN HOTEL ON (HOTEL_NO = HOT_NO)
-                      JOIN LOCAL ON (LOC_NO = LOCAL_NO)
-		             WHERE HOTEL_STATUS= 'N'
-                       AND ROOM_NAME = '스탠다드룸'
-		               AND LOCAL_NAME LIKE ? 
-                       AND LOCAL_NAME LIKE ? 
-                       AND ROOM_PRICE BETWEEN ? AND ?)  A)
-              WHERE RNUM BETWEEN ? AND ? 
-	</entry>	
-	
-	<entry key="selectListStar">
-		SELECT * 
-		FROM (
-               SELECT ROWNUM RNUM, A.* 
-		        FROM  (
-		            SELECT HOTEL_NAME, HOTEL_STAR, HOTEL_DESCRIPTION, LOCAL_NAME, ROOM_PRICE 
-		              FROM ROOM 
-		              JOIN HOTEL ON (HOTEL_NO = HOT_NO)  
-                      JOIN LOCAL ON (LOC_NO = LOCAL_NO) 
-		             WHERE HOTEL_STATUS= 'N' 
-                       AND ROOM_NAME = '스탠다드룸'
-		               AND LOCAL_NAME LIKE ?
-                       AND LOCAL_NAME LIKE ?
-                       AND ROOM_PRICE BETWEEN ? AND ?
-                       AND HOTEL_STAR = ? )  A) 
-              WHERE RNUM BETWEEN ? AND ?
-	</entry>
-	 -->
 	
 	<entry key="selectListName">
 		SELECT * 
@@ -305,6 +244,7 @@
                      ORDER BY HOTEL_STAR DESC, HOTEL_NO ASC )  A)
               WHERE RNUM BETWEEN ? AND ?
 	</entry>
+	
 	<!-- 박대석 -->
 	
 	

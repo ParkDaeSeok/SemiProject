@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import com.kh.member.model.service.MemberService;
 import com.kh.member.model.vo.Member;
 
+/* 
+ * 박대석 
+ * 
+ *  */
+
 /**
  * Servlet implementation class MemberInsertController 	
  */

@@ -6,7 +6,7 @@
 <comment>결제관련 쿼라</comment>
 
 
-		
+	<!-- 박대석 -->
 	<entry key="UpdateBook">
 	
 		UPDATE BOOK SET PAY_STATUS = 'Y'
@@ -91,6 +91,6 @@
 		INSERT INTO PAYMENT(PAY_ID, PAY_TYPE, PAY_DATE, BOOK_NO) 
 		VALUES(SEQ_YNO.NEXTVAL, 'CARD', SYSDATE, ?)
 	</entry>
-	
+	<!-- 박대석 -->
 	
 	</properties>

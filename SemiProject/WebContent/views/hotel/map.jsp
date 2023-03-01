@@ -4,6 +4,7 @@
 <% 
 	ArrayList<Map> list = (ArrayList<Map>)request.getAttribute("list");
 %>
+<%-- 박대석 --%>
 <!doctype html>
 <html lang="ko">
 <head>

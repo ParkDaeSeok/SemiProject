@@ -92,7 +92,7 @@ public class MemberService {
 
 	
 	
-	/* ------------ 마이페이지 ------------------------------*/
+	/* ------------ 박대석------------------------------*/
 	public ArrayList<Booking> selectListBooking(int memberNo) {
 		
 		Connection conn = getConnection();
@@ -145,7 +145,7 @@ public class MemberService {
 		return result;
 	}
 	
-	// --------------------------영훈님꺼------------------------------------------
+
 	public Member updatePwdMember(String userId, String userPwd, String updatePwd) {
 		
 		Connection conn = getConnection();
@@ -194,7 +194,6 @@ public class MemberService {
 		
 		return updateMem;
 	}
-	// --------------------------영훈님꺼------------------------------------------
-	// ------------------------------마이페이지-----------------------------
+	// --------------------------박대석------------------------------------------
 	
 }

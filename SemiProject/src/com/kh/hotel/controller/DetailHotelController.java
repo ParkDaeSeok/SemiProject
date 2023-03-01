@@ -20,6 +20,12 @@ import com.kh.hotel.model.vo.Map;
 import com.kh.hotel.model.vo.Review;
 import com.kh.hotel.model.vo.Room;
 
+/* 
+ * 박대석 
+ * 
+ *  */
+
+
 /**
  * Servlet implementation class DetailHotelController
  */

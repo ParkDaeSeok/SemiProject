@@ -12,6 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import com.kh.hotel.model.service.HotelService;
 import com.kh.hotel.model.vo.Map;
 
+/* 
+ * 박대석 
+ * 
+ *  */
+
+
 /**
  * Servlet implementation class IntoMapListController
  */

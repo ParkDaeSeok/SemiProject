@@ -18,6 +18,12 @@ import com.kh.hotel.model.vo.Photo;
 import com.kh.hotel.model.vo.Review;
 import com.oreilly.servlet.MultipartRequest;
 
+/* 
+ * 박대석 
+ * 
+ *  */
+
+
 /**
  * Servlet implementation class ReviewInsertController
  */

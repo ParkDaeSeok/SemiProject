@@ -13,6 +13,12 @@ import com.kh.common.model.vo.PageInfo;
 import com.kh.hotel.model.service.HotelService;
 import com.kh.hotel.model.vo.Hotel;
 
+/* 
+ * 박대석 
+ * 
+ *  */
+
+
 /**
  * Servlet implementation class SelectListFilter
  */
